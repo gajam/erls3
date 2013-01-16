@@ -105,7 +105,12 @@ handle_call({from_file, Bucket, Key,Filename, ContentType, AdditionalHeaders}, F
                     case file:read(Fd, 65536) of
                         {ok, R} ->
                             {ok, R, read};
-                        O->O
+                        eof ->
+                            file:close(Fd),
+                            eof;
+                        O->
+                            file:close(Fd),
+                            O
                     end;
                 (size)->
                    {ok, #file_info{size=Size}} = file:read_file_info(Filename),

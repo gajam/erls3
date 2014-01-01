@@ -1,14 +1,11 @@
 s3rl: an erlang wrapper for Amazon's S3 storage service
 --------------------------------------------------------
 
-Provides an Erlang-based interface for Amazon S3 storage service by 
-wrapping its REST interface through Erlang/OTP function calls.
-
 s3rl is a fork from code originally developed by Andrew Birkett 
 <andy@nobugs.org> called s3erl. It was then forked by Eric Cestari
 <eric@ohmforce.com> and renamed to erls3. Eric and a couple of other 
 contributors continued its development until 2010. It has been forked
-several times since then with very minor changes. See forks and
+several times since then with minor changes along the way. See forks and
 commits using Github's web interface for more information.
 
 What is it?
@@ -17,9 +14,10 @@ What is it?
 Amazon's S3 storage service is a "pay as you go" service for storing
 files.  You can use it to serve web content, backup your files, etc.
 
-This erls3erl library provides easy access to S3 for erlang applications.
+This library provides an Erlang-based interface for Amazon S3 storage 
+service by wrapping its REST interface through Erlang/OTP function calls.
 
-More info at: https://aws.amazon.com/s3/
+See https://aws.amazon.com/s3/ for more information.
 
 Intent
 -------
@@ -95,10 +93,6 @@ License
 
 Released under the GNU General Public License (GPL) v2.
 
-Feedback
---------
-
-Thanks for using github for patches.
 
 From Eric to Andy
 ------------------
